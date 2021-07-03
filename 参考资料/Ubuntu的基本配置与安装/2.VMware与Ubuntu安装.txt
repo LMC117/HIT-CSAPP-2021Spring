@@ -1,0 +1,30 @@
+虚拟机VMware Workstation 14.x 序列号 | KEY：
+CG54H-D8D0H-H8DHY-C6X7X-N2KG6
+ZC3WK-AFXEK-488JP-A7MQX-XL8YF
+AC5XK-0ZD4H-088HP-9NQZV-ZG2R4
+ZC5XK-A6E0M-080XQ-04ZZG-YF08D
+ZY5H0-D3Y8K-M89EZ-AYPEG-MYUA8
+FF31K-AHZD1-H8ETZ-8WWEZ-WUUVA
+CV7T2-6WY5Q-48EWP-ZXY7X-QGUWD
+
+1.运行安装程序
+  更改安装目录为D盘等
+  去掉：更新、体验  两个选项
+  输入：许可证 ---上面选择一个
+2.运行VMWARE
+  文件-->新建虚拟机--典型--光盘映像文件--ubuntu-19.04-desktop-amd64.iso
+  个性化Linux：Ubuntu 64-2019ICS   用户名为“姓名缩写+学号    密码自己定义
+   安装位置：建议改为D盘等，目录可以自己定义。
+   自定义硬件：内存2G 处理机数量2、内核数量2
+   虚拟化引擎打开：虚拟化VX-T/EPT  、CPU计数器
+   开始安装Ubuntu19.04
+3.Linux安装配置
+   安装后，输入密码登陆
+   提示 update 更新，可以更新，也可以以后更新
+   livepatch可以注册
+
+注意虚拟机安装后可以在VMWARE中删除掉重装。
+可以在硬盘中把整个虚拟机安装占用的目录与文件都删除了。
+
+以下很重要： 别以后虚拟机崩溃了，再重装就麻烦了
+虚拟机备份：把整个目录的文件都备份到其他磁盘或U盘等

@@ -1,0 +1,19 @@
+1.  https://visualstudio.microsoft.com
+    下载 Windows版-->Community 2019  （免费、不用序列号）
+    运行vs_community.exe，即开始下载Visual Studio Installer并安装
+2. 安装的配置选项设置：
+    1）选择：使用 C++的桌面开发
+          用兴趣的同学可以同时选择：使用C++的Linux开发
+   2）安装位置：建议更改为D盘等，否则可能导致C盘空间不足。
+           下载缓存等位置也可以改为D盘
+   3)  语言包：
+         可以选择：英语（建议）            或者 中文（简体）
+   4）可以选择：全部下载后再安装
+3.安装后重新启动计算机，运行VS2019（开始-程序-VS2019）
+  1）固定到任务栏/开始屏幕 --方便以后使用
+  2）运行后，可以注册，建议不注册-not now may be later
+  3)  Development Settings 开发配置：Visual C++
+4. 开始第一个程序-hello吧，正常运行就OK了
+
+下一步可以省略：
+5. 安装asmdude插件，反汇编时汇编关键词高亮等。

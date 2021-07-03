@@ -1,0 +1,17 @@
+-shared； Create a shared library /* 创建共享库文件时需要添加的编译选项 */
+因为共享库的代码都是位置无关的，所以通常还需要添加编译选项-fPIC。
+
+编译共享库时使用fPIC/fpic:
+-fPIC； Generate position-independent code if possible (large mode)
+-fpic； Generate position-independent code if possible (small mode)
+
+编译可执行程序时使用FPIE/fpie：
+-fPIE； Generate position-independent code for executables if possible (large mode)
+-fpie； Generate position-independent code for executables if possible (small mode)
+
+链接时使用pie：
+ 在ld时增加-pie选项才能产生这种代码。即gcc -fpie -pie来编译程序。单独使用哪一个都无法达到效果。
+-pie； Create a position independent executable
+
+
+关闭：-fno-pic -fno-PIC -fno-pie -no-pie 

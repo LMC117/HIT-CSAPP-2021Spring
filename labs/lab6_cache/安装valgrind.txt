@@ -1,0 +1,37 @@
+一、下载源码安装Valgrind的方法（这种编译安装的方法更直接、可靠）
+
+1、下载源码
+ step1.1：下载地址
+  http://valgrind.org/downloads/
+  目前版本：Valgrind 3.17.0 [17MB] - 19 March 2021.
+ step1.2：将压缩包拷贝到你想存放的目录（例如：/home),不可以放到和windows共享的文件夹下。
+ 
+ step1.3：进入压缩包所在文件夹。
+    cd /home
+	
+2、valgrind安装：
+step2.1：解压
+   sudo tar -xjvf valgrind-3.17.0.tar.bz2 valgrind-3.17.0/
+
+step2.2：
+   cd valgrind-3.17.0
+
+step2.3在当前路径安装：
+ ./configure
+或者指定安装路径：
+ ./configure --prefix=/usr/local/
+step2.4：
+ make
+
+step2.5：
+ sudo make install
+ 
+ 二、检查内存泄漏
+ 已经有-g编译的可执行程序a.out,采用如下方式运行该程序：
+  valgrind --tool=memcheck --leak-check=full ./a.out
+  
+  如果程序是会正常退出的程序，那么当程序退出的时候valgrind自然会输出内存泄漏的信息。
+  如果程序是个守护进程，只要在别的终端下杀死memcheck进程（因为valgrind默认使用memcheck工具，就是默认参数—tools=memcheck）：
+
+  #killall memcheck
+  这样程序（./a.out）就被kill了
